@@ -1,0 +1,47 @@
+// modal-styles.scss
+
+// Variables opcionales para colores
+$modal-overlay-bg: rgba(0, 0, 0, 0.5);
+$modal-bg: #fff;
+$close-btn-color: #000;
+
+.modal-overlay {
+  display: none; // Por defecto no visible
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $modal-overlay-bg;
+  z-index: 1000;
+
+  &.open {
+    display: flex; // Se muestra cuando se aplica la clase .open
+  }
+}
+
+.modal-content {
+  background-color: $modal-bg;
+  width: 30%;
+  padding: 24px;
+  margin: 10% auto;
+  border-radius: 8px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: $close-btn-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

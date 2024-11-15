@@ -1,0 +1,21 @@
+@import "../../../assets/styles/variables.scss";
+
+.div{
+    display: flex;
+    flex-direction: column;
+
+    .input {
+        width: 472px;
+        height: 47px;
+        padding: 0.5rem;
+        border-radius: 10px;
+        border: 1px solid $border-input;
+        color: $text-color;
+    }
+
+    .p {
+        margin-top: 0.5rem;
+        color: $text-error;
+        font-size: 0.8rem;
+    }
+}
